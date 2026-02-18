@@ -1,6 +1,6 @@
 # Capstone Project — Statistical Analysis of World Bank Data (Capstone_1.ipynb)
 
-This repository contains a Jupyter Notebook (Capstone_1.ipynb) that explores indicators from the World Bank's Worldwide Bureaucracy Indicators (WWBI) dataset. The notebook is an undergraduate-style capstone analysis that focuses on gender-related labor market indicators across countries, with a primary focus on European Union member states.
+This repository explores indicators from the World Bank's Worldwide Bureaucracy Indicators (WWBI) dataset. The notebook is capstone analysis that focuses on gender-related labor market indicators across countries, with a primary focus on European Union member states.
 
 Notebook permalink:
 https://github.com/Abbast/Statistical-Analysis-of-World-Bank-Data/blob/6d8a4c1d407fa9014734451db36fa6c7b59394cc/Capstone_1.ipynb
@@ -20,8 +20,6 @@ Primary question
 Secondary (time-permitting)
 - On average, is there a difference in the female-to-male wage ratio in the private sector of EU member nations between 2000 and 2018?
 
-The notebook outlines statistical hypotheses for each question and demonstrates the exploratory data analysis, data cleaning choices, and statistical tests (normality checks using SciPy, and final tests depending on distributional results).
-
 ## What the notebook does (high level)
 
 - Loads the WWBI dataset (CSV hosted in the Thinkfulta18 repository).
@@ -37,26 +35,6 @@ The notebook outlines statistical hypotheses for each question and demonstrates 
 - The dataset contains many missing values; the loaded CSV has rows with numerous NaNs.
 - The notebook extracts the "Females, as a share of private paid employees" indicator and begins the analysis pipeline for the main research question.
 - Additional cleaning and careful subsetting (EU membership filtering, handling missing values across years) are required before the final hypothesis tests.
-
-## How to run the notebook
-
-Option A — Google Colab (recommended for quick run)
-1. Open the notebook in Colab using the Colab badge or this link (if present in the notebook metadata):
-   https://colab.research.google.com/github/Abbast/Thinkfulta18/blob/main/Capstone_1.ipynb
-2. Run cells sequentially. Colab will already have commonly used packages available.
-
-Option B — Locally
-1. Clone this repository:
-   git clone https://github.com/Abbast/Statistical-Analysis-of-World-Bank-Data.git
-2. Install dependencies (example using pip):
-   pip install jupyter pandas numpy matplotlib seaborn scipy
-3. Start Jupyter Notebook / Lab:
-   jupyter notebook Capstone_1.ipynb
-4. Run the notebook cells in order.
-
-Note: The notebook reads the CSV directly from:
-https://raw.githubusercontent.com/Abbast/Thinkfulta18/main/WWBIData.csv  
-If you prefer, download that CSV and modify the read_csv path to a local file.
 
 ## Dependencies
 
